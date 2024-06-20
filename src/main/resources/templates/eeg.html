@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EEG Diagram</title>
+</head>
+<body>
+    <p>Diagram EEG</p>
+    <p> username: <span th:text="${username}"></span></p>
+    <p> electrode: <span th:text="${electrode}"></span></p>
+    <img th:src="'data:image/png;base64,' + ${image}" alt="eeg">
+</body>
+</html>
